@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,7 +15,6 @@
 
     <div class="scanlines"></div>
 
-    <!-- HEADER -->
     <header class="topbar">
 
         <div class="brand">
@@ -31,6 +31,7 @@
         <nav>
             <a href="#home">HOME</a>
             <a href="#catalog">CATALOG</a>
+            <a href="#videos">VIDEOS</a>
             <a href="#system">SYSTEM</a>
         </nav>
 
@@ -43,6 +44,7 @@
 
 
     <!-- HERO -->
+
     <section id="home" class="hero">
 
         <div class="hero-grid"></div>
@@ -80,6 +82,7 @@
 
 
     <!-- CATALOG -->
+
     <section id="catalog" class="catalog">
 
         <div class="catalog-header">
@@ -103,51 +106,141 @@
         </div>
 
 
-        <!-- FILTERS -->
         <div class="filters">
 
-            <button
-                class="filter active"
-                data-category="all">
-
+            <button class="filter active" data-category="all">
                 ALL
-
             </button>
 
-            <button
-                class="filter"
-                data-category="helmet">
-
+            <button class="filter" data-category="helmet">
                 HELMET
-
             </button>
 
-            <button
-                class="filter"
-                data-category="vest">
-
+            <button class="filter" data-category="vest">
                 VEST
-
             </button>
 
-            <button
-                class="filter"
-                data-category="belt">
-
+            <button class="filter" data-category="belt">
                 BELT
-
             </button>
 
         </div>
 
 
-        <!-- PRODUCTS -->
         <div id="products" class="products"></div>
 
     </section>
 
 
+    <!-- VIDEOS -->
+
+    <section id="videos" class="videos-section">
+
+        <div class="catalog-header">
+
+            <div>
+
+                <p class="eyebrow">
+                    PARAGON // MEDIA DATABASE
+                </p>
+
+                <h2>
+                    EQUIPMENT VIDEOS
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="videos-grid">
+
+            <!-- CHALECO -->
+
+            <article class="video-card">
+
+                <div class="video-container">
+
+                    <video
+                        controls
+                        preload="metadata"
+                        playsinline>
+
+                        <source
+                            src="K-ZERO-SF-VIDEO1.mp4"
+                            type="video/mp4">
+
+                        Tu navegador no puede reproducir este video.
+
+                    </video>
+
+                </div>
+
+                <div class="video-info">
+
+                    <p class="video-category">
+                        VEST // K-ZERO-SF
+                    </p>
+
+                    <h3>
+                        K-ZERO SF
+                    </h3>
+
+                    <span>
+                        FILE // K-ZERO-SF-VIDEO1.mp4
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- CASCO -->
+
+            <article class="video-card">
+
+                <div class="video-container">
+
+                    <video
+                        controls
+                        preload="metadata"
+                        playsinline>
+
+                        <source
+                            src="helmet/HELMET_VIDEO.mp4"
+                            type="video/mp4">
+
+                        Tu navegador no puede reproducir este video.
+
+                    </video>
+
+                </div>
+
+                <div class="video-info">
+
+                    <p class="video-category">
+                        HELMET // PARAGON
+                    </p>
+
+                    <h3>
+                        PARAGON HELMET
+                    </h3>
+
+                    <span>
+                        FILE // HELMET_VIDEO.mp4
+                    </span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
     <!-- SYSTEM -->
+
     <section id="system" class="system">
 
         <div>
@@ -171,7 +264,6 @@
     </section>
 
 
-    <!-- FOOTER -->
     <footer>
 
         <span>
@@ -186,6 +278,7 @@
 
 
     <!-- MODAL -->
+
     <div id="modal" class="modal">
 
         <div class="modal-background"></div>
@@ -224,3 +317,4 @@
 </body>
 
 </html>
+```
