@@ -1,1 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PARAGON | ACCESSORIES</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="scanlines"></div>
+
+    <!-- HEADER -->
+    <header class="topbar">
+
+        <div class="brand">
+
+            <div class="brand-logo">P</div>
+
+            <div>
+                <h2>PARAGON</h2>
+                <span>STRIKE DIVISION</span>
+            </div>
+
+        </div>
+
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#catalog">CATALOG</a>
+            <a href="#system">SYSTEM</a>
+        </nav>
+
+        <div class="status">
+            <span></span>
+            SYSTEM ONLINE
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-grid"></div>
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                PARAGON // EQUIPMENT DATABASE
+            </p>
+
+            <h1>
+                ACCESSORIES
+            </h1>
+
+            <p class="hero-description">
+                Sistema de visualización de equipamiento
+                y accesorios de PARAGON STRIKE DIVISION.
+            </p>
+
+            <a href="#catalog" class="enter-button">
+                ENTER CATALOG
+            </a>
+
+        </div>
+
+        <div class="hero-info">
+
+            <span>PSDV // 001</span>
+            <span>SECURE NETWORK</span>
+            <span>ACCESS LEVEL: OPERATOR</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATALOG -->
+    <section id="catalog" class="catalog">
+
+        <div class="catalog-header">
+
+            <div>
+
+                <p class="eyebrow">
+                    DATABASE // 001
+                </p>
+
+                <h2>
+                    PARAGON EQUIPMENT
+                </h2>
+
+            </div>
+
+            <div id="counter">
+                00 ITEMS
+            </div>
+
+        </div>
+
+
+        <!-- FILTERS -->
+        <div class="filters">
+
+            <button
+                class="filter active"
+                data-category="all">
+
+                ALL
+
+            </button>
+
+            <button
+                class="filter"
+                data-category="helmet">
+
+                HELMET
+
+            </button>
+
+            <button
+                class="filter"
+                data-category="vest">
+
+                VEST
+
+            </button>
+
+            <button
+                class="filter"
+                data-category="belt">
+
+                BELT
+
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCTS -->
+        <div id="products" class="products"></div>
+
+    </section>
+
+
+    <!-- SYSTEM -->
+    <section id="system" class="system">
+
+        <div>
+
+            <p class="eyebrow">
+                SYSTEM INFORMATION
+            </p>
+
+            <h2>
+                PARAGON EQUIPMENT NETWORK
+            </h2>
+
+        </div>
+
+        <p>
+            Interfaz visual destinada a organizar los
+            componentes y accesorios del proyecto
+            PARAGON STRIKE DIVISION.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <span>
+            PARAGON STRIKE DIVISION
+        </span>
+
+        <span>
+            © 2026 // EQUIPMENT DATABASE
+        </span>
+
+    </footer>
+
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+
+        <div class="modal-background"></div>
+
+        <div class="modal-box">
+
+            <button id="closeModal" class="close">
+                ×
+            </button>
+
+            <div class="modal-image">
+
+                <img id="modalImage" src="" alt="">
+
+            </div>
+
+            <div class="modal-info">
+
+                <p id="modalCategory" class="eyebrow"></p>
+
+                <h2 id="modalName"></h2>
+
+                <p id="modalDescription"></p>
+
+                <div id="modalFile" class="file-name"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
