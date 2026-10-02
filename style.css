@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
+
 
 body {
     background: #080a0b;
@@ -23,24 +26,30 @@ body {
 
 .topbar {
     height: 80px;
+
     padding: 0 6%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     background: #0b0d0f;
+
     border-bottom: 1px solid #202428;
 
     position: sticky;
     top: 0;
+
     z-index: 100;
 }
+
 
 .brand {
     display: flex;
     align-items: center;
     gap: 14px;
 }
+
 
 .brand-mark {
     width: 42px;
@@ -51,14 +60,17 @@ body {
     align-items: center;
 
     border: 1px solid #777;
+
     font-size: 22px;
     font-weight: 700;
 }
+
 
 .brand h1 {
     font-size: 20px;
     letter-spacing: 4px;
 }
+
 
 .brand span {
     font-size: 9px;
@@ -66,11 +78,13 @@ body {
     color: #888;
 }
 
+
 .status {
     font-size: 10px;
     letter-spacing: 2px;
     color: #777;
 }
+
 
 .status-dot {
     display: inline-block;
@@ -79,6 +93,7 @@ body {
     height: 7px;
 
     border-radius: 50%;
+
     background: #8d9b88;
 
     margin-right: 8px;
@@ -109,9 +124,11 @@ body {
         );
 }
 
+
 .hero-content {
     max-width: 800px;
 }
+
 
 .eyebrow {
     font-size: 11px;
@@ -119,14 +136,17 @@ body {
     color: #777;
 }
 
+
 .hero h2 {
     margin-top: 20px;
 
     font-size: clamp(45px, 8vw, 90px);
+
     line-height: .95;
 
     letter-spacing: 5px;
 }
+
 
 .hero p {
     margin-top: 25px;
@@ -134,26 +154,35 @@ body {
     max-width: 550px;
 
     color: #858585;
+
+    font-family: Arial, sans-serif;
+
     font-size: 13px;
+
     line-height: 1.8;
 }
+
 
 .enter-button {
     display: inline-block;
 
     margin-top: 35px;
+
     padding: 14px 25px;
 
     border: 1px solid #555;
 
     color: white;
+
     text-decoration: none;
 
     font-size: 11px;
+
     letter-spacing: 3px;
 
     transition: .3s;
 }
+
 
 .enter-button:hover {
     background: #e5e5e5;
@@ -169,20 +198,26 @@ body {
     padding: 40px 6% 100px;
 }
 
+
 .system-section {
-    padding: 80px 0;
+    padding: 90px 0;
 }
+
 
 .system-header {
     display: flex;
+
     justify-content: space-between;
+
     align-items: flex-end;
 
     margin-bottom: 45px;
 
     border-bottom: 1px solid #25292c;
+
     padding-bottom: 25px;
 }
+
 
 .system-number {
     display: block;
@@ -190,50 +225,83 @@ body {
     color: #777;
 
     font-size: 10px;
+
     letter-spacing: 4px;
 
     margin-bottom: 12px;
 }
 
+
 .system-header h2 {
     font-size: 28px;
+
     letter-spacing: 3px;
 }
+
 
 .system-header p {
     margin-top: 12px;
 
     color: #777;
 
-    font-size: 11px;
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
     letter-spacing: 1px;
 }
 
+
 .system-code {
     color: #555;
+
     font-size: 10px;
+
     letter-spacing: 3px;
 }
 
 
 /* =========================
-   SEPARATORS
+   SEPARADORES
 ========================= */
 
 .system-divider {
-    height: 100px;
+    height: 120px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     border-top: 1px solid #1e2225;
+
     border-bottom: 1px solid #1e2225;
 
     color: #444;
 
     font-size: 9px;
+
     letter-spacing: 4px;
+}
+
+
+/* =========================
+   SUBSYSTEM
+========================= */
+
+.subsystem-title {
+    margin: 55px 0 25px;
+
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid #1d2124;
+
+    color: #555;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
 }
 
 
@@ -243,6 +311,7 @@ body {
 
 .system-video {
     width: 100%;
+
     max-width: 1100px;
 
     margin: 0 auto 50px;
@@ -254,8 +323,10 @@ body {
     position: relative;
 }
 
+
 .system-video video {
     width: 100%;
+
     display: block;
 
     max-height: 600px;
@@ -263,13 +334,16 @@ body {
     background: #000;
 }
 
+
 .video-label {
     height: 40px;
 
     padding: 0 15px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     border-top: 1px solid #222;
@@ -277,6 +351,7 @@ body {
     color: #666;
 
     font-size: 8px;
+
     letter-spacing: 2px;
 }
 
@@ -294,6 +369,7 @@ body {
     gap: 18px;
 }
 
+
 .product-card {
     background: #0d1012;
 
@@ -307,6 +383,7 @@ body {
         background .25s;
 }
 
+
 .product-card:hover {
     transform: translateY(-5px);
 
@@ -315,11 +392,14 @@ body {
     background: #111416;
 }
 
+
 .product-image {
     height: 240px;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     padding: 15px;
@@ -332,8 +412,10 @@ body {
         );
 }
 
+
 .product-image img {
     max-width: 100%;
+
     max-height: 100%;
 
     object-fit: contain;
@@ -350,19 +432,24 @@ body {
     border-top: 1px solid #202428;
 }
 
+
 .product-category {
     font-size: 8px;
+
     letter-spacing: 2px;
 
     color: #666;
 }
 
+
 .product-info h3 {
     margin-top: 8px;
 
     font-size: 15px;
+
     letter-spacing: 1px;
 }
+
 
 .product-info p {
     margin-top: 8px;
@@ -372,9 +459,12 @@ body {
     color: #777;
 
     font-family: Arial, sans-serif;
+
     font-size: 12px;
+
     line-height: 1.5;
 }
+
 
 .product-info button {
     margin-top: 15px;
@@ -390,13 +480,16 @@ body {
     font-family: 'Orbitron', sans-serif;
 
     font-size: 8px;
+
     letter-spacing: 2px;
 
     cursor: pointer;
 }
 
+
 .product-info button:hover {
     background: #ddd;
+
     color: #111;
 }
 
@@ -407,12 +500,15 @@ body {
 
 .single-product-area {
     max-width: 850px;
+
     margin: 0 auto;
 }
+
 
 .kzero-card .product-image {
     height: 420px;
 }
+
 
 .double-image {
     display: grid;
@@ -422,8 +518,10 @@ body {
     gap: 10px;
 }
 
+
 .double-image img {
     width: 100%;
+
     height: 100%;
 
     object-fit: contain;
@@ -442,6 +540,7 @@ body {
     display: none;
 
     justify-content: center;
+
     align-items: center;
 
     padding: 30px;
@@ -451,13 +550,17 @@ body {
     z-index: 1000;
 }
 
+
 .modal.active {
     display: flex;
 }
 
+
 .modal-box {
     width: 100%;
+
     max-width: 1100px;
+
     max-height: 90vh;
 
     overflow-y: auto;
@@ -469,15 +572,18 @@ body {
     position: relative;
 }
 
+
 .modal-close {
     position: absolute;
 
     top: 12px;
+
     right: 15px;
 
     z-index: 5;
 
     width: 35px;
+
     height: 35px;
 
     background: #080a0b;
@@ -491,6 +597,7 @@ body {
     cursor: pointer;
 }
 
+
 .modal-content {
     display: grid;
 
@@ -499,10 +606,12 @@ body {
     min-height: 550px;
 }
 
+
 .modal-images {
     display: flex;
 
     justify-content: center;
+
     align-items: center;
 
     gap: 10px;
@@ -512,30 +621,38 @@ body {
     background: #050606;
 }
 
+
 .modal-images img {
     max-width: 48%;
+
     max-height: 500px;
 
     object-fit: contain;
 }
 
+
 .modal-info {
     padding: 50px 35px;
 }
+
 
 .modal-info > span {
     color: #666;
 
     font-size: 9px;
+
     letter-spacing: 3px;
 }
+
 
 .modal-info h2 {
     margin-top: 12px;
 
     font-size: 28px;
+
     letter-spacing: 2px;
 }
+
 
 #modalDescription {
     margin-top: 15px;
@@ -547,9 +664,11 @@ body {
     line-height: 1.7;
 }
 
+
 .technical-data {
     margin-top: 35px;
 }
+
 
 .technical-data div {
     padding: 13px 0;
@@ -557,17 +676,21 @@ body {
     border-bottom: 1px solid #222;
 
     display: flex;
+
     flex-direction: column;
 
     gap: 5px;
 }
 
+
 .technical-data span {
     color: #555;
 
     font-size: 8px;
+
     letter-spacing: 2px;
 }
+
 
 .technical-data strong {
     color: #bbb;
@@ -575,6 +698,7 @@ body {
     font-family: Arial, sans-serif;
 
     font-size: 12px;
+
     font-weight: normal;
 }
 
@@ -589,11 +713,13 @@ footer {
     border-top: 1px solid #202428;
 
     display: flex;
+
     justify-content: space-between;
 
     color: #555;
 
     font-size: 9px;
+
     letter-spacing: 2px;
 }
 
@@ -614,6 +740,7 @@ footer {
 
     .system-header {
         flex-direction: column;
+
         align-items: flex-start;
 
         gap: 20px;
@@ -633,11 +760,13 @@ footer {
 
     .systems {
         padding-left: 5%;
+
         padding-right: 5%;
     }
 
     footer {
         flex-direction: column;
+
         gap: 15px;
     }
 }
