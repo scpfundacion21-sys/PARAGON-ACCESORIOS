@@ -1,628 +1,611 @@
-const products = [
+/* =========================================
+   PARAGON STRIKE DIVISION
+   PRODUCT DATABASE
+========================================= */
 
-    /* =====================================================
-       HELMET
-    ===================================================== */
+
+/* =========================
+   HELMET SYSTEM
+========================= */
+
+const helmetProducts = [
 
     {
-        name: "HELMET BASE",
-        category: "helmet",
-        file: "HELMET_BASE.png",
+        id: "HELMET_BASE",
+        name: "PARAGON HELMET",
+        category: "HELMET SYSTEM",
         image: "helmet/HELMET_BASE.png",
-
         type: "Tactical Helmet",
         material: "Polímero técnico de alta resistencia",
-        system: "Sistema de casco modular",
-        function: "Protección y soporte de accesorios",
-        compatibility: "Accesorios compatibles con casco táctico",
+        system: "Helmet Protection System",
+        function: "Protección y soporte para accesorios",
+        compatibility: "Accesorios modulares para casco",
         configuration: "Modular"
     },
 
     {
+        id: "HELMET_COVER",
         name: "HELMET COVER",
-        category: "helmet",
-        file: "HELMET_COVER.png",
+        category: "HELMET ACCESSORY",
         image: "helmet/HELMET_COVER.png",
-
         type: "Helmet Cover",
         material: "Textil sintético resistente",
-        system: "Sistema de cobertura",
-        function: "Protección y configuración exterior",
-        compatibility: "Cascos compatibles",
-        configuration: "Extraíble"
+        system: "Helmet Protection System",
+        function: "Protección exterior y configuración del casco",
+        compatibility: "PARAGON Helmet",
+        configuration: "Modular"
     },
 
     {
-        name: "HELMET GOGGLES",
-        category: "helmet",
-        file: "HELMET_GOGGLES.png",
+        id: "HELMET_GOGGLES",
+        name: "TACTICAL GOGGLES",
+        category: "HELMET ACCESSORY",
         image: "helmet/HELMET_GOGGLES.png",
-
         type: "Protective Goggles",
         material: "Polímero técnico y lente resistente",
-        system: "Sistema de protección ocular",
-        function: "Protección de los ojos",
-        compatibility: "Configuraciones de casco compatibles",
-        configuration: "Ajustable"
+        system: "Eye Protection System",
+        function: "Protección ocular",
+        compatibility: "Helmet compatible",
+        configuration: "Front mounted"
     },
 
     {
-        name: "HELMET GPNVG 18",
-        category: "helmet",
-        file: "HELMET_GPNVG_18.png",
+        id: "HELMET_GPNVG",
+        name: "GPNVG-18",
+        category: "HELMET ACCESSORY",
         image: "helmet/HELMET_GPNVG_18.png",
-
         type: "Multi-Tube NVG",
         material: "Polímero técnico y componentes electrónicos",
-        system: "Sistema de visión nocturna",
-        function: "Observación en condiciones de baja iluminación",
-        compatibility: "Monturas NVG compatibles",
-        configuration: "Multitubo"
+        system: "Night Vision System",
+        function: "Observación nocturna",
+        compatibility: "NVG Mount",
+        configuration: "Helmet mounted"
     },
 
     {
-        name: "HELMET HEADSET",
-        category: "helmet",
-        file: "HELMET_HEADSET.png",
+        id: "HELMET_HEADSET",
+        name: "TACTICAL HEADSET",
+        category: "HELMET ACCESSORY",
         image: "helmet/HELMET_HEADSET.png",
-
-        type: "Tactical Headset",
+        type: "Communication Headset",
         material: "Polímero técnico y materiales acolchados",
-        system: "Sistema de comunicación",
+        system: "Communication System",
         function: "Comunicación y protección auditiva",
-        compatibility: "Sistemas de comunicación compatibles",
-        configuration: "Montable"
+        compatibility: "Helmet / Headset Adapter",
+        configuration: "Helmet mounted"
     },
 
     {
+        id: "HELMET_ADAPTER",
         name: "HEADSET ADAPTER",
-        category: "helmet",
-        file: "HELMET_HEADSET_ADAPTER.png",
+        category: "HELMET ACCESSORY",
         image: "helmet/HELMET_HEADSET_ADAPTER.png",
-
-        type: "Headset Adapter",
+        type: "Helmet Adapter",
         material: "Polímero técnico",
-        system: "Adaptador de montaje",
-        function: "Fijación del headset al casco",
-        compatibility: "Headsets y cascos compatibles",
-        configuration: "Modular"
+        system: "Helmet Integration System",
+        function: "Integración del headset al casco",
+        compatibility: "Compatible Headsets",
+        configuration: "Side mounted"
     },
 
     {
+        id: "HELMET_IFF",
         name: "IFF STROBE",
-        category: "helmet",
-        file: "HELMET_IFF_STROBE.png",
+        category: "HELMET ACCESSORY",
         image: "helmet/HELMET_IFF_STROBE.png",
-
-        type: "Identification Strobe",
-        material: "Polímero técnico",
-        system: "Señalización electrónica",
+        type: "Identification Light",
+        material: "Polímero técnico y electrónica",
+        system: "Identification System",
         function: "Identificación visual",
-        compatibility: "Montajes compatibles",
-        configuration: "Compacta"
+        compatibility: "Helmet mounting points",
+        configuration: "Rear mounted"
     },
 
     {
+        id: "HELMET_DUAL",
         name: "DUAL TUBE NVG",
-        category: "helmet",
-        file: "HELMET_NVG_DUAL_TUBE.png",
+        category: "HELMET ACCESSORY",
         image: "helmet/HELMET_NVG_DUAL_TUBE.png",
-
-        type: "Dual-Tube NVG",
+        type: "Dual Tube NVG",
         material: "Polímero técnico y componentes electrónicos",
-        system: "Visión nocturna",
-        function: "Observación en baja iluminación",
-        compatibility: "Monturas NVG compatibles",
-        configuration: "Dual-Tube"
+        system: "Night Vision System",
+        function: "Observación nocturna",
+        compatibility: "NVG Mount",
+        configuration: "Front mounted"
     },
 
     {
+        id: "HELMET_MONO",
         name: "MONOCULAR NVG",
-        category: "helmet",
-        file: "HELMET_NVG_MONOCULAR.png",
+        category: "HELMET ACCESSORY",
         image: "helmet/HELMET_NVG_MONOCULAR.png",
-
         type: "Monocular NVG",
         material: "Polímero técnico y componentes electrónicos",
-        system: "Visión nocturna",
-        function: "Observación en baja iluminación",
-        compatibility: "Monturas NVG compatibles",
-        configuration: "Monocular"
+        system: "Night Vision System",
+        function: "Observación nocturna",
+        compatibility: "NVG Mount",
+        configuration: "Front mounted"
     },
 
     {
+        id: "HELMET_MOUNT",
         name: "NVG MOUNT",
-        category: "helmet",
-        file: "HELMET_NVG_MOUNT.png",
+        category: "HELMET ACCESSORY",
         image: "helmet/HELMET_NVG_MOUNT.png",
-
         type: "NVG Mount",
-        material: "Polímero técnico / aleación ligera",
-        system: "Sistema de montaje",
-        function: "Fijación de dispositivos NVG",
-        compatibility: "Dispositivos NVG compatibles",
-        configuration: "Ajustable"
-    },
-
-    {
-        name: "SIGNAL LIGHT",
-        category: "helmet",
-        file: "HELMET_SIGNAL_LIGHT.png",
-        image: "helmet/HELMET_SIGNAL_LIGHT.png",
-
-        type: "Signal Light",
         material: "Polímero técnico",
-        system: "Iluminación auxiliar",
+        system: "Helmet Integration System",
+        function: "Soporte para dispositivo NVG",
+        compatibility: "Compatible NVG systems",
+        configuration: "Front mounted"
+    },
+
+    {
+        id: "HELMET_SIGNAL",
+        name: "SIGNAL LIGHT",
+        category: "HELMET ACCESSORY",
+        image: "helmet/HELMET_SIGNAL_LIGHT.png",
+        type: "Signal Light",
+        material: "Polímero técnico y electrónica",
+        system: "Signal System",
         function: "Señalización e identificación",
-        compatibility: "Montajes compatibles",
-        configuration: "Compacta"
-    },
-
-
-    /* =====================================================
-       VEST
-    ===================================================== */
-
-    {
-        name: "ADMIN",
-        category: "vest",
-        file: "ADMIN.png",
-        image: "ADMIN.png",
-
-        type: "Admin Pouch",
-        material: "Nylon de alta resistencia",
-        system: "MOLLE",
-        function: "Organización de pequeños accesorios",
-        compatibility: "Sistemas MOLLE compatibles",
-        configuration: "Modular"
-    },
-
-    {
-        name: "ESCOPETA",
-        category: "vest",
-        file: "ESCOPETA.png",
-        image: "ESCOPETA.png",
-
-        type: "Shotgun Component",
-        material: "Material técnico según configuración",
-        system: "Sistema modular",
-        function: "Componente de configuración del equipo",
-        compatibility: "Configuración compatible",
-        configuration: "Modular"
-    },
-
-    {
-        name: "HIDRATACION",
-        category: "vest",
-        file: "HIDRATACION.png",
-        image: "HIDRATACION.png",
-
-        type: "Hydration System",
-        material: "Textil sintético y depósito flexible",
-        system: "Hydration Carrier",
-        function: "Transporte de agua",
-        compatibility: "Chalecos y sistemas MOLLE compatibles",
-        configuration: "Modular"
-    },
-
-    {
-        name: "IFAK",
-        category: "vest",
-        file: "IFAK.png",
-        image: "IFAK.png",
-
-        type: "IFAK Pouch",
-        material: "Nylon de alta resistencia",
-        system: "MOLLE",
-        function: "Transporte de material médico",
-        compatibility: "Sistemas MOLLE compatibles",
-        configuration: "Modular"
-    },
-
-    {
-        name: "K-ZERO SF FRONT",
-        category: "vest",
-        file: "K-ZERO-SF-FRONT.png",
-        image: "K-ZERO-SF-FRONT.png",
-
-        type: "Plate Carrier",
-        material: "Nylon de alta resistencia",
-        system: "MOLLE / Modular",
-        function: "Transporte y organización de equipamiento",
-        compatibility: "Pouches y accesorios MOLLE",
-        configuration: "Modular"
-    },
-
-    {
-        name: "K-ZERO SF FRONT 2",
-        category: "vest",
-        file: "K-ZERO-SF-FRONT2.png",
-        image: "K-ZERO-SF-FRONT2.png",
-
-        type: "Plate Carrier",
-        material: "Nylon de alta resistencia",
-        system: "MOLLE / Modular",
-        function: "Transporte y organización de equipamiento",
-        compatibility: "Pouches y accesorios MOLLE",
-        configuration: "Modular"
-    },
-
-    {
-        name: "PHONE",
-        category: "vest",
-        file: "PHONE.png",
-        image: "PHONE.png",
-
-        type: "Phone Pouch",
-        material: "Nylon de alta resistencia",
-        system: "MOLLE",
-        function: "Transporte de dispositivo móvil",
-        compatibility: "Sistemas MOLLE compatibles",
-        configuration: "Modular"
-    },
-
-    {
-        name: "PISTOL",
-        category: "vest",
-        file: "PISTOL.png",
-        image: "PISTOL.png",
-
-        type: "Pistol Component",
-        material: "Material técnico según configuración",
-        system: "Sistema modular",
-        function: "Componente de configuración del equipo",
-        compatibility: "Configuración compatible",
-        configuration: "Modular"
-    },
-
-    {
-        name: "PORTA GRANADAS",
-        category: "vest",
-        file: "PORTA-GRANADAS.png",
-        image: "PORTA-GRANADAS.png",
-
-        type: "Utility Pouch",
-        material: "Nylon de alta resistencia",
-        system: "MOLLE",
-        function: "Transporte de accesorios",
-        compatibility: "Sistemas MOLLE compatibles",
-        configuration: "Modular"
-    },
-
-    {
-        name: "RADIO",
-        category: "vest",
-        file: "RADIO.png",
-        image: "RADIO.png",
-
-        type: "Radio Pouch",
-        material: "Nylon de alta resistencia",
-        system: "MOLLE",
-        function: "Transporte y organización de radio",
-        compatibility: "Radios de tamaño compatible",
-        configuration: "Ajustable"
-    },
-
-    {
-        name: "RIFLE",
-        category: "vest",
-        file: "RIFLE.png",
-        image: "RIFLE.png",
-
-        type: "Rifle Component",
-        material: "Material técnico según configuración",
-        system: "Sistema modular",
-        function: "Componente de configuración del equipo",
-        compatibility: "Configuración compatible",
-        configuration: "Modular"
-    },
-
-    {
-        name: "SUJETA FUSIL",
-        category: "vest",
-        file: "SUJETA-FUSIL.png",
-        image: "SUJETA-FUSIL.png",
-
-        type: "Retention Accessory",
-        material: "Nylon y materiales sintéticos resistentes",
-        system: "Sistema de retención",
-        function: "Sujeción y organización",
-        compatibility: "Configuraciones compatibles",
-        configuration: "Ajustable"
-    },
-
-    {
-        name: "TORNIQUETE",
-        category: "vest",
-        file: "TORNIQUETE.png",
-        image: "TORNIQUETE.png",
-
-        type: "Medical Accessory",
-        material: "Material sintético de grado médico",
-        system: "Equipo médico",
-        function: "Elemento de primeros auxilios",
-        compatibility: "Porta-torniquetes compatibles",
-        configuration: "Compacta"
-    },
-
-
-    /* =====================================================
-       BELT
-    ===================================================== */
-
-    {
-        name: "PARAGON BELT",
-        category: "belt",
-        file: "PARAGON_BELT.png",
-        image: "belt/PARAGON_BELT.png",
-
-        type: "Tactical Battle Belt",
-        material: "Nylon de alta resistencia",
-        system: "MOLLE",
-        function: "Transporte y organización de equipamiento",
-        compatibility: "Pouches y accesorios MOLLE",
-        configuration: "Ajustable y modular"
-    },
-
-    {
-        name: "BELT ACCESSORY",
-        category: "belt",
-        file: "PARAGON_BELT_ACCESSORY.png",
-        image: "belt/PARAGON_BELT_ACCESSORY.png",
-
-        type: "Belt Accessory",
-        material: "Nylon de alta resistencia",
-        system: "Sistema modular",
-        function: "Complemento del cinturón",
-        compatibility: "Cinturones tácticos compatibles",
-        configuration: "Modular"
-    },
-
-    {
-        name: "DUMP POUCH",
-        category: "belt",
-        file: "PARAGON_DUMP_POUCH.png",
-        image: "belt/PARAGON_DUMP_POUCH.png",
-
-        type: "Dump Pouch",
-        material: "Nylon de alta resistencia",
-        system: "MOLLE",
-        function: "Almacenamiento temporal de accesorios",
-        compatibility: "Cinturones y sistemas MOLLE",
-        configuration: "Plegable"
-    },
-
-    {
-        name: "FLASHLIGHT POUCH",
-        category: "belt",
-        file: "PARAGON_FLASHLIGHT_POUCH.png",
-        image: "belt/PARAGON_FLASHLIGHT_POUCH.png",
-
-        type: "Flashlight Pouch",
-        material: "Nylon de alta resistencia",
-        system: "MOLLE",
-        function: "Transporte de linterna",
-        compatibility: "Linternas de tamaño compatible",
-        configuration: "Compacta"
-    },
-
-    {
-        name: "GLOVE POUCH",
-        category: "belt",
-        file: "PARAGON_GLOVE_POUCH.png",
-        image: "belt/PARAGON_GLOVE_POUCH.png",
-
-        type: "Glove Pouch",
-        material: "Nylon de alta resistencia",
-        system: "MOLLE",
-        function: "Transporte de guantes",
-        compatibility: "Cinturones MOLLE compatibles",
-        configuration: "Compacta"
-    },
-
-    {
-        name: "IFAK POUCH",
-        category: "belt",
-        file: "PARAGON_IFAK_POUCH.png",
-        image: "belt/PARAGON_IFAK_POUCH.png",
-
-        type: "IFAK Pouch",
-        material: "Nylon de alta resistencia",
-        system: "MOLLE",
-        function: "Transporte de material médico",
-        compatibility: "Sistemas MOLLE compatibles",
-        configuration: "Modular"
-    },
-
-    {
-        name: "MOLLE UTILITY BELT",
-        category: "belt",
-        file: "PARAGON_MOLLE_UTILITY_BELT.png",
-        image: "belt/PARAGON_MOLLE_UTILITY_BELT.png",
-
-        type: "MOLLE Utility Belt",
-        material: "Nylon de alta resistencia",
-        system: "MOLLE",
-        function: "Transporte de accesorios",
-        compatibility: "Pouches y accesorios MOLLE",
-        configuration: "Ajustable y modular"
-    },
-
-    {
-        name: "RADIO POUCH",
-        category: "belt",
-        file: "PARAGON_RADIO_POUCH.png",
-        image: "belt/PARAGON_RADIO_POUCH.png",
-
-        type: "Radio Pouch",
-        material: "Nylon de alta resistencia",
-        system: "MOLLE",
-        function: "Transporte de radio",
-        compatibility: "Radios de tamaño compatible",
-        configuration: "Ajustable"
-    },
-
-    {
-        name: "TACTICAL UTILITY BELT",
-        category: "belt",
-        file: "PARAGON_TACTICAL_UTILITY_BELT.png",
-        image: "belt/PARAGON_TACTICAL_UTILITY_BELT.png",
-
-        type: "Tactical Utility Belt",
-        material: "Nylon de alta resistencia",
-        system: "Sistema modular",
-        function: "Transporte de equipamiento",
-        compatibility: "Pouches y accesorios compatibles",
-        configuration: "Ajustable y modular"
-    },
-
-    {
-        name: "UTILITY POUCH",
-        category: "belt",
-        file: "PARAGON_UTILITY_POUCH.png",
-        image: "belt/PARAGON_UTILITY_POUCH.png",
-
-        type: "Utility Pouch",
-        material: "Nylon de alta resistencia",
-        system: "MOLLE",
-        function: "Organización de accesorios",
-        compatibility: "Sistemas MOLLE compatibles",
+        compatibility: "Helmet mounting points",
         configuration: "Modular"
     }
 
 ];
 
 
-/* =====================================================
-   ELEMENTOS
-===================================================== */
+/* =========================
+   K-ZERO-SF
+========================= */
 
-const productsContainer =
-    document.getElementById("products");
+const kzeroProduct = {
 
-const counter =
-    document.getElementById("counter");
+    id: "K-ZERO-SF",
 
-const filters =
-    document.querySelectorAll(".filter");
+    name: "K-ZERO-SF",
 
-const modal =
-    document.getElementById("modal");
+    category: "K-ZERO-SF VEST SYSTEM",
 
-const modalImage =
-    document.getElementById("modalImage");
+    images: [
+        "K-ZERO-SF-FRONT.png",
+        "K-ZERO-SF-FRONT2.png"
+    ],
 
-const modalName =
-    document.getElementById("modalName");
+    type: "Modular Tactical Vest",
 
-const modalCategory =
-    document.getElementById("modalCategory");
+    material: "Nylon técnico de alta resistencia",
 
-const modalType =
-    document.getElementById("modalType");
+    system: "K-ZERO-SF Vest System",
 
-const modalMaterial =
-    document.getElementById("modalMaterial");
+    function: "Plataforma modular para configuración del equipo",
 
-const modalSystem =
-    document.getElementById("modalSystem");
+    compatibility: "Configuración modular compatible con accesorios",
 
-const modalFunction =
-    document.getElementById("modalFunction");
-
-const modalCompatibility =
-    document.getElementById("modalCompatibility");
-
-const modalConfiguration =
-    document.getElementById("modalConfiguration");
-
-const modalFile =
-    document.getElementById("modalFile");
-
-const closeModal =
-    document.getElementById("closeModal");
+    configuration: "Modular / Front configuration"
+};
 
 
-/* =====================================================
-   MOSTRAR PRODUCTOS
-===================================================== */
+/* =========================
+   BELT SYSTEM
+========================= */
 
-function renderProducts(category = "all") {
+const beltProducts = [
 
-    const visibleProducts =
-        category === "all"
-            ? products
-            : products.filter(
-                product =>
-                    product.category === category
-            );
+    {
+        id: "PARAGON_BELT",
 
-    counter.textContent =
-        `${String(visibleProducts.length).padStart(2, "0")} ITEMS`;
+        name: "PARAGON BELT",
 
-    productsContainer.innerHTML = "";
+        category: "TACTICAL BELT",
 
-    visibleProducts.forEach(product => {
+        image: "belt/PARAGON_BELT.png",
 
-        const card =
-            document.createElement("article");
+        type: "Tactical Battle Belt",
 
-        card.className = "product";
+        material: "Nylon de alta resistencia",
 
-        card.innerHTML = `
+        system: "Tactical Belt System",
+
+        function: "Plataforma para accesorios de configuración",
+
+        compatibility: "Accesorios compatibles con sistema modular",
+
+        configuration: "Modular"
+    },
+
+
+    {
+        id: "PARAGON_BELT_ACCESSORY",
+
+        name: "BELT ACCESSORY",
+
+        category: "BELT ACCESSORY",
+
+        image: "belt/PARAGON_BELT_ACCESSORY.png",
+
+        type: "Belt Accessory",
+
+        material: "Material técnico resistente",
+
+        system: "Tactical Belt System",
+
+        function: "Integración de accesorios",
+
+        compatibility: "Tactical Belt",
+
+        configuration: "Modular"
+    },
+
+
+    {
+        id: "PARAGON_DUMP_POUCH",
+
+        name: "DUMP POUCH",
+
+        category: "BELT ACCESSORY",
+
+        image: "belt/PARAGON_DUMP_POUCH.png",
+
+        type: "Dump Pouch",
+
+        material: "Nylon de alta resistencia",
+
+        system: "Tactical Belt System",
+
+        function: "Almacenamiento temporal de accesorios",
+
+        compatibility: "MOLLE / Tactical Belt",
+
+        configuration: "Foldable"
+    },
+
+
+    {
+        id: "PARAGON_FLASHLIGHT_POUCH",
+
+        name: "FLASHLIGHT POUCH",
+
+        category: "BELT ACCESSORY",
+
+        image: "belt/PARAGON_FLASHLIGHT_POUCH.png",
+
+        type: "Flashlight Pouch",
+
+        material: "Nylon de alta resistencia",
+
+        system: "Tactical Belt System",
+
+        function: "Transporte de linterna",
+
+        compatibility: "Tactical Belt / MOLLE",
+
+        configuration: "Compact"
+    },
+
+
+    {
+        id: "PARAGON_GLOVE_POUCH",
+
+        name: "GLOVE POUCH",
+
+        category: "BELT ACCESSORY",
+
+        image: "belt/PARAGON_GLOVE_POUCH.png",
+
+        type: "Utility Pouch",
+
+        material: "Nylon de alta resistencia",
+
+        system: "Tactical Belt System",
+
+        function: "Almacenamiento de accesorios pequeños",
+
+        compatibility: "Tactical Belt / MOLLE",
+
+        configuration: "Compact"
+    },
+
+
+    {
+        id: "PARAGON_IFAK_POUCH",
+
+        name: "IFAK POUCH",
+
+        category: "BELT ACCESSORY",
+
+        image: "belt/PARAGON_IFAK_POUCH.png",
+
+        type: "Medical Pouch",
+
+        material: "Nylon de alta resistencia",
+
+        system: "Medical Equipment System",
+
+        function: "Transporte de equipo médico",
+
+        compatibility: "Tactical Belt / MOLLE",
+
+        configuration: "Modular"
+    },
+
+
+    {
+        id: "PARAGON_MOLLE_BELT",
+
+        name: "MOLLE UTILITY BELT",
+
+        category: "TACTICAL BELT",
+
+        image: "belt/PARAGON_MOLLE_UTILITY_BELT.png",
+
+        type: "MOLLE Utility Belt",
+
+        material: "Nylon de alta resistencia",
+
+        system: "MOLLE Belt System",
+
+        function: "Plataforma modular para accesorios",
+
+        compatibility: "MOLLE compatible accessories",
+
+        configuration: "Modular"
+    },
+
+
+    {
+        id: "PARAGON_RADIO_POUCH",
+
+        name: "RADIO POUCH",
+
+        category: "BELT ACCESSORY",
+
+        image: "belt/PARAGON_RADIO_POUCH.png",
+
+        type: "Radio Pouch",
+
+        material: "Nylon de alta resistencia",
+
+        system: "Communication Equipment System",
+
+        function: "Transporte de radio",
+
+        compatibility: "Tactical Belt / MOLLE",
+
+        configuration: "Adjustable"
+    },
+
+
+    {
+        id: "PARAGON_TACTICAL_BELT",
+
+        name: "TACTICAL UTILITY BELT",
+
+        category: "TACTICAL BELT",
+
+        image: "belt/PARAGON_TACTICAL_UTILITY_BELT.png",
+
+        type: "Tactical Utility Belt",
+
+        material: "Nylon de alta resistencia",
+
+        system: "Tactical Belt System",
+
+        function: "Plataforma para accesorios",
+
+        compatibility: "Modular accessories",
+
+        configuration: "Modular"
+    },
+
+
+    {
+        id: "PARAGON_UTILITY_POUCH",
+
+        name: "UTILITY POUCH",
+
+        category: "BELT ACCESSORY",
+
+        image: "belt/PARAGON_UTILITY_POUCH.png",
+
+        type: "Utility Pouch",
+
+        material: "Nylon de alta resistencia",
+
+        system: "Tactical Belt System",
+
+        function: "Almacenamiento de accesorios",
+
+        compatibility: "Tactical Belt / MOLLE",
+
+        configuration: "Modular"
+    }
+
+];
+
+
+/* =========================================
+   RENDER PRODUCT
+========================================= */
+
+function createProductCard(product) {
+
+    return `
+        <article
+            class="product-card"
+            onclick="openProduct('${product.id}')"
+        >
+
             <div class="product-image">
 
                 <img
                     src="${product.image}"
                     alt="${product.name}"
                     loading="lazy"
-                    onerror="this.parentElement.classList.add('image-error')"
+                    onerror="this.style.display='none'"
                 >
 
             </div>
 
             <div class="product-info">
 
-                <div class="product-category">
-                    ${product.category.toUpperCase()}
-                </div>
+                <span class="product-category">
+                    ${product.category}
+                </span>
 
-                <div class="product-name">
-                    ${product.name}
-                </div>
+                <h3>${product.name}</h3>
 
-                <div class="product-file">
-                    ${product.file}
-                </div>
+                <p>
+                    ${product.type}
+                </p>
+
+                <button
+                    onclick="event.stopPropagation(); openProduct('${product.id}')"
+                >
+                    VIEW DETAILS
+                </button>
 
             </div>
-        `;
 
-        card.addEventListener(
-            "click",
-            () => openProduct(product)
-        );
-
-        productsContainer.appendChild(card);
-    });
+        </article>
+    `;
 }
 
 
-/* =====================================================
-   MODAL
-===================================================== */
+/* =========================================
+   RENDER HELMET
+========================================= */
 
-function openProduct(product) {
+const helmetContainer =
+    document.getElementById("helmet-products");
 
-    modalImage.src = product.image;
+helmetProducts.forEach(product => {
 
-    modalImage.alt = product.name;
+    helmetContainer.innerHTML +=
+        createProductCard(product);
 
-    modalName.textContent =
-        product.name;
+});
+
+
+/* =========================================
+   RENDER BELT
+========================================= */
+
+const beltContainer =
+    document.getElementById("belt-products");
+
+beltProducts.forEach(product => {
+
+    beltContainer.innerHTML +=
+        createProductCard(product);
+
+});
+
+
+/* =========================================
+   FIND PRODUCT
+========================================= */
+
+function findProduct(id) {
+
+    if (id === "K-ZERO-SF") {
+        return kzeroProduct;
+    }
+
+    return [
+        ...helmetProducts,
+        ...beltProducts
+    ].find(product => product.id === id);
+}
+
+
+/* =========================================
+   OPEN PRODUCT
+========================================= */
+
+function openProduct(id) {
+
+    const product = findProduct(id);
+
+    if (!product) {
+        return;
+    }
+
+    const modal =
+        document.getElementById("productModal");
+
+    const modalImages =
+        document.getElementById("modalImages");
+
+    const modalCategory =
+        document.getElementById("modalCategory");
+
+    const modalTitle =
+        document.getElementById("modalTitle");
+
+    const modalDescription =
+        document.getElementById("modalDescription");
+
+    const modalType =
+        document.getElementById("modalType");
+
+    const modalMaterial =
+        document.getElementById("modalMaterial");
+
+    const modalSystem =
+        document.getElementById("modalSystem");
+
+    const modalFunction =
+        document.getElementById("modalFunction");
+
+    const modalCompatibility =
+        document.getElementById("modalCompatibility");
+
+    const modalConfiguration =
+        document.getElementById("modalConfiguration");
+
+
+    /* IMAGES */
+
+    modalImages.innerHTML = "";
+
+
+    if (product.images) {
+
+        product.images.forEach(image => {
+
+            modalImages.innerHTML += `
+                <img
+                    src="${image}"
+                    alt="${product.name}"
+                >
+            `;
+
+        });
+
+    } else {
+
+        modalImages.innerHTML = `
+            <img
+                src="${product.image}"
+                alt="${product.name}"
+            >
+        `;
+
+    }
+
+
+    /* INFORMATION */
 
     modalCategory.textContent =
-        product.category.toUpperCase();
+        product.category;
+
+    modalTitle.textContent =
+        product.name;
+
+    modalDescription.textContent =
+        product.type;
 
     modalType.textContent =
         product.type;
@@ -642,17 +625,21 @@ function openProduct(product) {
     modalConfiguration.textContent =
         product.configuration;
 
-    modalFile.textContent =
-        "FILE // " + product.file;
 
     modal.classList.add("active");
 
-    document.body.style.overflow =
-        "hidden";
+    document.body.style.overflow = "hidden";
 }
 
 
+/* =========================================
+   CLOSE PRODUCT
+========================================= */
+
 function closeProduct() {
+
+    const modal =
+        document.getElementById("productModal");
 
     modal.classList.remove("active");
 
@@ -660,61 +647,29 @@ function closeProduct() {
 }
 
 
-closeModal.addEventListener(
-    "click",
-    closeProduct
-);
-
+/* =========================================
+   CLOSE BY BACKGROUND
+========================================= */
 
 document
-    .querySelector(".modal-background")
-    .addEventListener(
-        "click",
-        closeProduct
-    );
+    .getElementById("productModal")
+    .addEventListener("click", function(event) {
 
-
-document.addEventListener(
-    "keydown",
-    event => {
-
-        if (event.key === "Escape") {
+        if (event.target === this) {
             closeProduct();
         }
 
+    });
+
+
+/* =========================================
+   ESC KEY
+========================================= */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeProduct();
     }
-);
-
-
-/* =====================================================
-   FILTROS
-===================================================== */
-
-filters.forEach(button => {
-
-    button.addEventListener(
-        "click",
-        () => {
-
-            filters.forEach(
-                item =>
-                    item.classList.remove("active")
-            );
-
-            button.classList.add("active");
-
-            renderProducts(
-                button.dataset.category
-            );
-
-        }
-    );
 
 });
-
-
-/* =====================================================
-   INICIAR
-===================================================== */
-
-renderProducts();
