@@ -1,3 +1,4 @@
+```javascript
 const products = [
 
     /* =========================
@@ -290,10 +291,7 @@ const products = [
 ];
 
 
-
-/* =========================
-   ELEMENTOS
-========================= */
+/* ELEMENTOS */
 
 const productsContainer =
     document.getElementById("products");
@@ -303,7 +301,6 @@ const counter =
 
 const filters =
     document.querySelectorAll(".filter");
-
 
 const modal =
     document.getElementById("modal");
@@ -327,10 +324,7 @@ const closeModal =
     document.getElementById("closeModal");
 
 
-
-/* =========================
-   MOSTRAR PRODUCTOS
-========================= */
+/* MOSTRAR PRODUCTOS */
 
 function renderProducts(category = "all") {
 
@@ -350,12 +344,10 @@ function renderProducts(category = "all") {
 
     }
 
-
     counter.textContent =
         `${String(
             visibleProducts.length
         ).padStart(2, "0")} ITEMS`;
-
 
     productsContainer.innerHTML = "";
 
@@ -413,10 +405,7 @@ function renderProducts(category = "all") {
 }
 
 
-
-/* =========================
-   ABRIR PRODUCTO
-========================= */
+/* MODAL */
 
 function openProduct(product) {
 
@@ -438,19 +427,12 @@ function openProduct(product) {
     modalFile.textContent =
         "FILE // " + product.file;
 
-
     modal.classList.add("active");
 
     document.body.style.overflow =
         "hidden";
-
 }
 
-
-
-/* =========================
-   CERRAR MODAL
-========================= */
 
 function closeProduct() {
 
@@ -458,7 +440,6 @@ function closeProduct() {
 
     document.body.style.overflow =
         "";
-
 }
 
 
@@ -490,10 +471,7 @@ document.addEventListener(
 );
 
 
-
-/* =========================
-   FILTROS
-========================= */
+/* FILTROS */
 
 filters.forEach(button => {
 
@@ -508,11 +486,9 @@ filters.forEach(button => {
                     )
             );
 
-
             button.classList.add(
                 "active"
             );
-
 
             renderProducts(
                 button.dataset.category
@@ -524,9 +500,7 @@ filters.forEach(button => {
 });
 
 
-
-/* =========================
-   INICIAR
-========================= */
+/* INICIAR */
 
 renderProducts();
+```
