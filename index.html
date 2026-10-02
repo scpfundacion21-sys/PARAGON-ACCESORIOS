@@ -3,254 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PARAGON STRIKE DIVISION | EQUIPMENT</title>
+
+    <title>PARAGON STRIKE DIVISION</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="scanlines"></div>
-
 <header class="topbar">
-
     <div class="brand">
-        <div class="brand-logo">P</div>
+        <span class="brand-mark">P</span>
 
         <div>
-            <h2>PARAGON</h2>
+            <h1>PARAGON</h1>
             <span>STRIKE DIVISION</span>
         </div>
     </div>
 
-    <nav>
-        <a href="#home">HOME</a>
-        <a href="#catalog">EQUIPMENT</a>
-        <a href="#videos">VIDEOS</a>
-    </nav>
-
     <div class="status">
-        <span></span>
+        <span class="status-dot"></span>
         SYSTEM ONLINE
     </div>
-
 </header>
 
 
-<section id="home" class="hero">
+<main>
 
-    <div class="hero-grid"></div>
+    <!-- HERO -->
 
-    <div class="hero-content">
+    <section class="hero">
+        <div class="hero-content">
+            <span class="eyebrow">PARAGON EQUIPMENT DATABASE</span>
 
-        <p class="eyebrow">
-            PARAGON // EQUIPMENT DATABASE
-        </p>
+            <h2>TACTICAL<br>CONFIGURATION</h2>
 
-        <h1>ACCESSORIES</h1>
+            <p>
+                Equipamiento modular organizado por sistemas
+                de configuración.
+            </p>
 
-        <p class="hero-description">
-            Sistema de visualización de equipamiento y accesorios
-            de PARAGON STRIKE DIVISION.
-        </p>
-
-        <a href="#catalog" class="enter-button">
-            ENTER DATABASE
-        </a>
-
-    </div>
-
-    <div class="hero-info">
-        <span>PSDV // 001</span>
-        <span>SECURE NETWORK</span>
-        <span>ACCESS LEVEL: OPERATOR</span>
-    </div>
-
-</section>
-
-
-<section id="catalog" class="catalog">
-
-    <div class="catalog-header">
-
-        <div>
-            <p class="eyebrow">DATABASE // EQUIPMENT</p>
-            <h2>PARAGON EQUIPMENT</h2>
+            <a href="#systems" class="enter-button">
+                ENTER DATABASE
+            </a>
         </div>
-
-        <div id="counter">00 ITEMS</div>
-
-    </div>
+    </section>
 
 
-    <div class="filters">
+    <!-- SISTEMAS -->
 
-        <button class="filter active" data-category="all">
-            ALL
-        </button>
+    <section id="systems" class="systems">
 
-        <button class="filter" data-category="helmet">
-            HELMET
-        </button>
+        <!-- ========================= -->
+        <!-- HELMET SYSTEM -->
+        <!-- ========================= -->
 
-        <button class="filter" data-category="vest">
-            VEST
-        </button>
+        <section class="system-section">
 
-        <button class="filter" data-category="belt">
-            BELT
-        </button>
+            <div class="system-header">
+                <div>
+                    <span class="system-number">SYSTEM 01</span>
+                    <h2>HELMET SYSTEM</h2>
+                    <p>
+                        Sistema de protección y accesorios
+                        para configuración de casco.
+                    </p>
+                </div>
 
-    </div>
-
-
-    <div id="products" class="products"></div>
-
-</section>
-
-
-<section id="videos" class="videos-section">
-
-    <div class="catalog-header">
-
-        <div>
-            <p class="eyebrow">PARAGON // MEDIA DATABASE</p>
-            <h2>EQUIPMENT VIDEOS</h2>
-        </div>
-
-    </div>
-
-
-    <div class="videos-grid">
-
-        <article class="video-card">
-
-            <div class="video-container">
-
-                <video controls preload="metadata" playsinline>
-                    <source src="K-ZERO-SF-VIDEO1.mp4" type="video/mp4">
-                    Tu navegador no puede reproducir este video.
-                </video>
-
+                <span class="system-code">HLM // 01</span>
             </div>
 
-            <div class="video-info">
+            <div class="system-video">
 
-                <p class="video-category">
-                    VEST // K-ZERO-SF
-                </p>
-
-                <h3>K-ZERO SF</h3>
-
-                <span>
-                    FILE // K-ZERO-SF-VIDEO1.mp4
-                </span>
-
-            </div>
-
-        </article>
-
-
-        <article class="video-card">
-
-            <div class="video-container">
-
-                <video controls preload="metadata" playsinline>
+                <video controls preload="metadata">
                     <source src="helmet/HELMET_VIDEO.mp4" type="video/mp4">
-                    Tu navegador no puede reproducir este video.
+                    Tu navegador no soporta video.
                 </video>
 
-            </div>
-
-            <div class="video-info">
-
-                <p class="video-category">
-                    HELMET // PARAGON
-                </p>
-
-                <h3>PARAGON HELMET</h3>
-
-                <span>
-                    FILE // helmet/HELMET_VIDEO.mp4
-                </span>
+                <div class="video-label">
+                    <span>HELMET SYSTEM // VIDEO</span>
+                    <span>PARAGON DATABASE</span>
+                </div>
 
             </div>
 
-        </article>
+            <div class="product-grid" id="helmet-products"></div>
 
-    </div>
-
-</section>
+        </section>
 
 
-<footer>
+        <!-- SEPARADOR -->
 
-    <span>PARAGON STRIKE DIVISION</span>
-    <span>© 2026 // EQUIPMENT DATABASE</span>
+        <div class="system-divider">
+            <span>PARAGON // SYSTEM SEPARATION</span>
+        </div>
 
-</footer>
+
+        <!-- ========================= -->
+        <!-- K-ZERO-SF VEST SYSTEM -->
+        <!-- ========================= -->
+
+        <section class="system-section">
+
+            <div class="system-header">
+                <div>
+                    <span class="system-number">SYSTEM 02</span>
+                    <h2>K-ZERO-SF VEST SYSTEM</h2>
+                    <p>
+                        Sistema modular de chaleco
+                        K-ZERO-SF.
+                    </p>
+                </div>
+
+                <span class="system-code">VST // K-ZERO</span>
+            </div>
 
 
-<div id="modal" class="modal">
+            <!-- K-ZERO VIDEO -->
 
-    <div class="modal-background"></div>
+            <div class="system-video">
+
+                <video controls preload="metadata">
+                    <source src="K-ZERO-SF-VIDEO1.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+
+                <div class="video-label">
+                    <span>K-ZERO-SF // VIDEO</span>
+                    <span>PARAGON DATABASE</span>
+                </div>
+
+            </div>
+
+
+            <!-- UN SOLO PRODUCTO -->
+
+            <div class="single-product-area">
+
+                <article
+                    class="product-card kzero-card"
+                    onclick="openProduct('K-ZERO-SF')"
+                >
+
+                    <div class="product-image double-image">
+
+                        <img
+                            src="K-ZERO-SF-FRONT.png"
+                            alt="K-ZERO-SF Front"
+                        >
+
+                        <img
+                            src="K-ZERO-SF-FRONT2.png"
+                            alt="K-ZERO-SF Front 2"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            VEST SYSTEM
+                        </span>
+
+                        <h3>K-ZERO-SF</h3>
+
+                        <p>
+                            Modular Tactical Vest System
+                        </p>
+
+                        <button
+                            onclick="event.stopPropagation(); openProduct('K-ZERO-SF')"
+                        >
+                            VIEW SYSTEM
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SEPARADOR -->
+
+        <div class="system-divider">
+            <span>PARAGON // SYSTEM SEPARATION</span>
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- TACTICAL BELT SYSTEM -->
+        <!-- ========================= -->
+
+        <section class="system-section">
+
+            <div class="system-header">
+                <div>
+                    <span class="system-number">SYSTEM 03</span>
+                    <h2>TACTICAL BELT SYSTEM</h2>
+                    <p>
+                        Plataformas de cinturón y accesorios
+                        modulares de configuración.
+                    </p>
+                </div>
+
+                <span class="system-code">BLT // 03</span>
+            </div>
+
+            <div class="product-grid" id="belt-products"></div>
+
+        </section>
+
+    </section>
+
+</main>
+
+
+<!-- ========================= -->
+<!-- MODAL -->
+<!-- ========================= -->
+
+<div class="modal" id="productModal">
 
     <div class="modal-box">
 
-        <button id="closeModal" class="close">
+        <button class="modal-close" onclick="closeProduct()">
             ×
         </button>
 
-        <div class="modal-image">
-            <img id="modalImage" src="" alt="">
-        </div>
+        <div class="modal-content">
 
-        <div class="modal-info">
+            <div class="modal-images" id="modalImages"></div>
 
-            <p id="modalCategory" class="eyebrow"></p>
+            <div class="modal-info">
 
-            <h2 id="modalName"></h2>
+                <span id="modalCategory"></span>
 
-            <div class="technical-data">
+                <h2 id="modalTitle"></h2>
 
-                <div>
-                    <span>TYPE</span>
-                    <strong id="modalType"></strong>
-                </div>
+                <p id="modalDescription"></p>
 
-                <div>
-                    <span>MATERIAL</span>
-                    <strong id="modalMaterial"></strong>
-                </div>
+                <div class="technical-data">
 
-                <div>
-                    <span>SYSTEM</span>
-                    <strong id="modalSystem"></strong>
-                </div>
+                    <div>
+                        <span>TYPE</span>
+                        <strong id="modalType"></strong>
+                    </div>
 
-                <div>
-                    <span>FUNCTION</span>
-                    <strong id="modalFunction"></strong>
-                </div>
+                    <div>
+                        <span>MATERIAL</span>
+                        <strong id="modalMaterial"></strong>
+                    </div>
 
-                <div>
-                    <span>COMPATIBILITY</span>
-                    <strong id="modalCompatibility"></strong>
-                </div>
+                    <div>
+                        <span>SYSTEM</span>
+                        <strong id="modalSystem"></strong>
+                    </div>
 
-                <div>
-                    <span>CONFIGURATION</span>
-                    <strong id="modalConfiguration"></strong>
+                    <div>
+                        <span>FUNCTION</span>
+                        <strong id="modalFunction"></strong>
+                    </div>
+
+                    <div>
+                        <span>COMPATIBILITY</span>
+                        <strong id="modalCompatibility"></strong>
+                    </div>
+
+                    <div>
+                        <span>CONFIGURATION</span>
+                        <strong id="modalConfiguration"></strong>
+                    </div>
+
                 </div>
 
             </div>
-
-            <div id="modalFile" class="file-name"></div>
 
         </div>
 
     </div>
 
 </div>
+
+
+<footer>
+
+    <div>
+        PARAGON STRIKE DIVISION
+    </div>
+
+    <span>
+        PRIVATE EQUIPMENT DATABASE
+    </span>
+
+</footer>
 
 
 <script src="script.js"></script>
