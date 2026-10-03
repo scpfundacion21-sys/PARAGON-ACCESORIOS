@@ -1,3 +1,4 @@
+```css
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
 
 
@@ -26,20 +27,14 @@ body {
 
 .topbar {
     height: 80px;
-
     padding: 0 6%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background: #0b0d0f;
-
     border-bottom: 1px solid #202428;
-
     position: sticky;
     top: 0;
-
     z-index: 100;
 }
 
@@ -54,13 +49,10 @@ body {
 .brand-mark {
     width: 42px;
     height: 42px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     border: 1px solid #777;
-
     font-size: 22px;
     font-weight: 700;
 }
@@ -88,14 +80,10 @@ body {
 
 .status-dot {
     display: inline-block;
-
     width: 7px;
     height: 7px;
-
     border-radius: 50%;
-
     background: #8d9b88;
-
     margin-right: 8px;
 }
 
@@ -106,10 +94,8 @@ body {
 
 .hero {
     min-height: 520px;
-
     display: flex;
     align-items: center;
-
     padding: 80px 8%;
 
     background:
@@ -139,47 +125,31 @@ body {
 
 .hero h2 {
     margin-top: 20px;
-
     font-size: clamp(45px, 8vw, 90px);
-
     line-height: .95;
-
     letter-spacing: 5px;
 }
 
 
 .hero p {
     margin-top: 25px;
-
     max-width: 550px;
-
     color: #858585;
-
     font-family: Arial, sans-serif;
-
     font-size: 13px;
-
     line-height: 1.8;
 }
 
 
 .enter-button {
     display: inline-block;
-
     margin-top: 35px;
-
     padding: 14px 25px;
-
     border: 1px solid #555;
-
     color: white;
-
     text-decoration: none;
-
     font-size: 11px;
-
     letter-spacing: 3px;
-
     transition: .3s;
 }
 
@@ -206,57 +176,41 @@ body {
 
 .system-header {
     display: flex;
-
     justify-content: space-between;
-
     align-items: flex-end;
-
     margin-bottom: 45px;
-
     border-bottom: 1px solid #25292c;
-
     padding-bottom: 25px;
 }
 
 
 .system-number {
     display: block;
-
     color: #777;
-
     font-size: 10px;
-
     letter-spacing: 4px;
-
     margin-bottom: 12px;
 }
 
 
 .system-header h2 {
     font-size: 28px;
-
     letter-spacing: 3px;
 }
 
 
 .system-header p {
     margin-top: 12px;
-
     color: #777;
-
     font-family: Arial, sans-serif;
-
     font-size: 12px;
-
     letter-spacing: 1px;
 }
 
 
 .system-code {
     color: #555;
-
     font-size: 10px;
-
     letter-spacing: 3px;
 }
 
@@ -267,21 +221,13 @@ body {
 
 .system-divider {
     height: 120px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     border-top: 1px solid #1e2225;
-
     border-bottom: 1px solid #1e2225;
-
     color: #444;
-
     font-size: 9px;
-
     letter-spacing: 4px;
 }
 
@@ -292,15 +238,10 @@ body {
 
 .subsystem-title {
     margin: 55px 0 25px;
-
     padding-bottom: 14px;
-
     border-bottom: 1px solid #1d2124;
-
     color: #555;
-
     font-size: 9px;
-
     letter-spacing: 3px;
 }
 
@@ -311,47 +252,31 @@ body {
 
 .system-video {
     width: 100%;
-
     max-width: 1100px;
-
     margin: 0 auto 50px;
-
     background: #050606;
-
     border: 1px solid #222;
-
     position: relative;
 }
 
 
 .system-video video {
     width: 100%;
-
     display: block;
-
     max-height: 600px;
-
     background: #000;
 }
 
 
 .video-label {
     height: 40px;
-
     padding: 0 15px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     border-top: 1px solid #222;
-
     color: #666;
-
     font-size: 8px;
-
     letter-spacing: 2px;
 }
 
@@ -362,19 +287,15 @@ body {
 
 .product-grid {
     display: grid;
-
     grid-template-columns:
         repeat(auto-fill, minmax(220px, 1fr));
-
     gap: 18px;
 }
 
 
 .product-card {
     background: #0d1012;
-
     border: 1px solid #202428;
-
     cursor: pointer;
 
     transition:
@@ -386,12 +307,15 @@ body {
 
 .product-card:hover {
     transform: translateY(-5px);
-
     border-color: #666;
-
     background: #111416;
 }
 
+
+/* =========================
+   PRODUCT IMAGE
+   FONDO BLANCO
+========================= */
 
 .product-image {
     height: 240px;
@@ -404,12 +328,7 @@ body {
 
     padding: 15px;
 
-    background:
-        radial-gradient(
-            circle,
-            #171b1d 0%,
-            #080a0b 70%
-        );
+    background: #ffffff;
 }
 
 
@@ -419,6 +338,8 @@ body {
     max-height: 100%;
 
     object-fit: contain;
+
+    background: #ffffff;
 }
 
 
@@ -428,68 +349,49 @@ body {
 
 .product-info {
     padding: 18px;
-
     border-top: 1px solid #202428;
 }
 
 
 .product-category {
     font-size: 8px;
-
     letter-spacing: 2px;
-
     color: #666;
 }
 
 
 .product-info h3 {
     margin-top: 8px;
-
     font-size: 15px;
-
     letter-spacing: 1px;
 }
 
 
 .product-info p {
     margin-top: 8px;
-
     min-height: 32px;
-
     color: #777;
-
     font-family: Arial, sans-serif;
-
     font-size: 12px;
-
     line-height: 1.5;
 }
 
 
 .product-info button {
     margin-top: 15px;
-
     padding: 9px 13px;
-
     background: transparent;
-
     border: 1px solid #444;
-
     color: #aaa;
-
     font-family: 'Orbitron', sans-serif;
-
     font-size: 8px;
-
     letter-spacing: 2px;
-
     cursor: pointer;
 }
 
 
 .product-info button:hover {
     background: #ddd;
-
     color: #111;
 }
 
@@ -500,31 +402,29 @@ body {
 
 .single-product-area {
     max-width: 850px;
-
     margin: 0 auto;
 }
 
 
 .kzero-card .product-image {
     height: 420px;
+    background: #ffffff;
 }
 
 
 .double-image {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 10px;
+    background: #ffffff;
 }
 
 
 .double-image img {
     width: 100%;
-
     height: 100%;
-
     object-fit: contain;
+    background: #ffffff;
 }
 
 
@@ -534,19 +434,12 @@ body {
 
 .modal {
     position: fixed;
-
     inset: 0;
-
     display: none;
-
     justify-content: center;
-
     align-items: center;
-
     padding: 30px;
-
     background: rgba(0, 0, 0, .88);
-
     z-index: 1000;
 }
 
@@ -558,54 +451,44 @@ body {
 
 .modal-box {
     width: 100%;
-
     max-width: 1100px;
-
     max-height: 90vh;
-
     overflow-y: auto;
-
     background: #0b0d0f;
-
     border: 1px solid #333;
-
     position: relative;
 }
 
 
 .modal-close {
     position: absolute;
-
     top: 12px;
-
     right: 15px;
-
     z-index: 5;
 
     width: 35px;
-
     height: 35px;
 
     background: #080a0b;
-
     border: 1px solid #444;
-
     color: white;
 
     font-size: 22px;
-
     cursor: pointer;
 }
 
 
 .modal-content {
     display: grid;
-
     grid-template-columns: 1.2fr 1fr;
-
     min-height: 550px;
 }
 
+
+/* =========================
+   MODAL IMAGES
+   FONDO BLANCO
+========================= */
 
 .modal-images {
     display: flex;
@@ -618,7 +501,7 @@ body {
 
     padding: 30px;
 
-    background: #050606;
+    background: #ffffff;
 }
 
 
@@ -628,6 +511,8 @@ body {
     max-height: 500px;
 
     object-fit: contain;
+
+    background: #ffffff;
 }
 
 
@@ -638,29 +523,22 @@ body {
 
 .modal-info > span {
     color: #666;
-
     font-size: 9px;
-
     letter-spacing: 3px;
 }
 
 
 .modal-info h2 {
     margin-top: 12px;
-
     font-size: 28px;
-
     letter-spacing: 2px;
 }
 
 
 #modalDescription {
     margin-top: 15px;
-
     color: #777;
-
     font-family: Arial, sans-serif;
-
     line-height: 1.7;
 }
 
@@ -672,33 +550,25 @@ body {
 
 .technical-data div {
     padding: 13px 0;
-
     border-bottom: 1px solid #222;
 
     display: flex;
-
     flex-direction: column;
-
     gap: 5px;
 }
 
 
 .technical-data span {
     color: #555;
-
     font-size: 8px;
-
     letter-spacing: 2px;
 }
 
 
 .technical-data strong {
     color: #bbb;
-
     font-family: Arial, sans-serif;
-
     font-size: 12px;
-
     font-weight: normal;
 }
 
@@ -709,17 +579,13 @@ body {
 
 footer {
     padding: 35px 6%;
-
     border-top: 1px solid #202428;
 
     display: flex;
-
     justify-content: space-between;
 
     color: #555;
-
     font-size: 9px;
-
     letter-spacing: 2px;
 }
 
@@ -740,9 +606,7 @@ footer {
 
     .system-header {
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 20px;
     }
 
@@ -760,13 +624,11 @@ footer {
 
     .systems {
         padding-left: 5%;
-
         padding-right: 5%;
     }
 
     footer {
         flex-direction: column;
-
         gap: 15px;
     }
 }
@@ -794,3 +656,5 @@ footer {
         height: 250px;
     }
 }
+```
+
